@@ -1,14 +1,14 @@
 
-import InitPots from '../components/InitPots';
-import AddTransaction from '../components/AddTransaction';
-import RenderTotalExpenses from '../components/RenderTotalExpenses'
-import RenderTransactions from '../components/RenderTransactions';
-import RenderCards from '../components/RenderCards';
-import RenderIncome from '../components/RenderIncome';
-import RenderFiveTransactions from '../components/RenderFiveTransactions';
-import RenderTopFive from '../components/RenderTopFive';
-import ResponsiveRenderFiveTransactions from '../components/ResponsiveRenderFiveTransactions'
-import ResponsiveRenderIncome from '../components/ResponsiveRenderIncome'
+import InitPots from './InitPots';
+import AddTransaction from './AddTransaction';
+import RenderTotalExpenses from './RenderTotalExpenses'
+import RenderTransactions from './RenderTransactions';
+import RenderCards from './RenderCards';
+import RenderIncome from './RenderIncome';
+import RenderFiveTransactions from './RenderFiveTransactions';
+import RenderTopFive from './RenderTopFive';
+import ResponsiveRenderFiveTransactions from './ResponsiveRenderFiveTransactions'
+import ResponsiveRenderIncome from './ResponsiveRenderIncome'
 
 
 import Typography from '@mui/material/Typography';
@@ -21,12 +21,7 @@ function Tracker() {
     <>
       <InitPots />
 
-      <Typography
-        variant='h3'
-        align='center'
-        sx={{ p: 5 }}>
-        Coins Tracker
-      </Typography>
+ 
 
       <Grid container spacing={1} justifyContent="center" pb={10}
         pr={5}

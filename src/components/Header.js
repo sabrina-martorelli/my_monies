@@ -1,9 +1,15 @@
-import Nav from "./Nav";
+
+import Typography from '@mui/material/Typography';
 
 function Header() {
     return (
       <>
-        <Nav />
+        <Typography
+        variant='h3'
+        align='center'
+        sx={{ p: 5 }}>
+        My Monies
+      </Typography>
       </>
       
     );
