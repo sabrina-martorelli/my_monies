@@ -57,8 +57,8 @@ function RenderCards() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <Card sx={{ maxWidth: 250, flexGrow: 1 }}>
+          <Grid item xs={12} sm={12}>
+            <Card sx={{ maxWidth: 580, flexGrow: 1 }}>
               <CardCover>
                 <video
                   autoPlay
@@ -81,8 +81,8 @@ function RenderCards() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <Card sx={{ maxWidth: 250, flexGrow: 1 }}>
+          <Grid item xs={12} sm={12}>
+            <Card sx={{ maxWidth: 580, flexGrow: 1 }}>
               <CardCover >
                 <video
                   autoPlay
