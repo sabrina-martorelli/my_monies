@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import Typography from '@mui/material/Typography';
+
 
 
 //Use of Pots to store values locally: Including Balance and Income
