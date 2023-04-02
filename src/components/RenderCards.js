@@ -30,11 +30,18 @@ function RenderCards() {
 
 
   return (
-    <>
-      <Box sx={{ display: 'flex', gap: 8, flexWrap: 'wrap', p: 5, m: 5, }}>
-        <Grid container spacing={4}>
-          <Grid item xs={12}>
-            <Card sx={{ maxWidth: 580, flexGrow: 1 }}>
+    <> 
+
+<Box
+  display="flex"
+  justifyContent="center"
+  alignItems="center"
+  
+ 
+>
+      
+         
+            <Card sx={{ maxWidth: 780, pl:10, pr:10}}>
               <CardCover>
                 <video
                   autoPlay
@@ -56,9 +63,8 @@ function RenderCards() {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
-          <Grid item xs={12} sm={12}>
-            <Card sx={{ maxWidth: 580, flexGrow: 1 }}>
+         
+            <Card sx={{ maxWidth: 780 ,  pl:10, pr:10}}>
               <CardCover>
                 <video
                   autoPlay
@@ -80,9 +86,8 @@ function RenderCards() {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
-          <Grid item xs={12} sm={12}>
-            <Card sx={{ maxWidth: 580, flexGrow: 1 }}>
+         
+            <Card sx={{ maxWidth: 780 , pl:10, pr:10}}>
               <CardCover >
                 <video
                   autoPlay
@@ -104,9 +109,8 @@ function RenderCards() {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
-        </Grid>
-      </Box>
+       
+        </Box>
     </>
   );
 }
