@@ -189,12 +189,12 @@ function AddTransaction() {
 
   return (
     <>
-      <Typography 
+      {/* <Typography 
         variant='h4' 
         align='center' 
         sx={{p:5}}>
         Add Transaction
-      </Typography>
+      </Typography> */}
      
       <Card style={{ maxWidth: 350, margin: "0 auto",}} >
         <CardContent>
