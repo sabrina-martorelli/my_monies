@@ -27,7 +27,7 @@ function AddTransaction() {
   const theme = createTheme({
     palette: {
       brand: {
-        main: '#e9c46a',
+        main: '#2a9d8f',
         contrastText: '#000',
         
       },
@@ -197,15 +197,15 @@ function AddTransaction() {
         Add Transaction
       </Typography> */}
      
-      <Card style={{ maxWidth: 650, margin: "0 auto", backgroundColor: "#264653"}} >
-        <CardContent>
-          <form onSubmit={handleSubmit}>
+      <Card style={{  maxWidth: 650, margin: "0 auto", backgroundColor: "#e9c46a"}} >
+        <CardContent >
+          <form onSubmit={handleSubmit} >
             <Grid container spacing={3} justifyContent="center" padding={2} >
 
               <Grid item xs={12} >
                 <LocalizationProvider dateAdapter={AdapterDayjs} >
                   <DatePicker
-                    sx={{ input: { color: '#000',  fontSize: "22px" } }}
+                   
                     label="Date"
                     value={date}  
                     onChange={(newValue) => {
@@ -217,7 +217,7 @@ function AddTransaction() {
               </Grid>
 
               <Grid item xs={12}>
-                <FormControl fullWidth required    sx={{ input: { color: '#000',  fontSize: "22px" } }}>
+                <FormControl fullWidth required  >
                   <InputLabel id="input-category">Category</InputLabel>
                   <Select
                  
@@ -243,7 +243,7 @@ function AddTransaction() {
 
               <Grid item xs={12}>
                 <TextField
-                sx={{ input: { color: '#000',  fontSize: "22px" } }}
+               
                   name='description'
                   value={formData.description}
                   label='Description'
@@ -256,7 +256,7 @@ function AddTransaction() {
 
               <Grid item xs={12}>
                 <TextField
-                 sx={{ input: { color: '#000',  fontSize: "22px" } }}
+                
                   type='number'
                   name='value'
                   value={formData.value} 
