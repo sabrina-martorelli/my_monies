@@ -11,7 +11,7 @@ function RenderIncome() {
   //Style for labels
   const style = {
     top: 30,
-    left: 400,
+    left: 300,
     lineHeight: "44px",
     fontSize: 22 
   };
