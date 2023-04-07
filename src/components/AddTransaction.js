@@ -27,7 +27,7 @@ function AddTransaction() {
   const theme = createTheme({
     palette: {
       brand: {
-        main: '#e76f51',
+        main: '#264653',
         contrastText: '#fff',
       },
     },
@@ -196,7 +196,7 @@ function AddTransaction() {
         Add Transaction
       </Typography> */}
      
-      <Card style={{ maxWidth: 350, margin: "0 auto",}} >
+      <Card style={{ maxWidth: 350, margin: "0 auto", backgroundColor: "#e9c46a"}} >
         <CardContent>
           <form onSubmit={handleSubmit}>
             <Grid container spacing={3} justifyContent="center" padding={2} >
@@ -204,7 +204,7 @@ function AddTransaction() {
               <Grid item xs={12} >
                 <LocalizationProvider dateAdapter={AdapterDayjs} >
                   <DatePicker
-
+                    sx={{ input: { color: '#000',  fontSize: "22px" } }}
                     label="Date"
                     value={date}  
                     onChange={(newValue) => {
@@ -216,16 +216,16 @@ function AddTransaction() {
               </Grid>
 
               <Grid item xs={12}>
-                <FormControl fullWidth required   style = {{ color:'#e76f51'}}>
-                  <InputLabel id="input-category">Category</InputLabel>
+                <FormControl fullWidth required    sx={{ input: { color: '#000',  fontSize: "22px" } }}>
+                  <InputLabel id="input-category" >Category</InputLabel>
                   <Select
-                  
+                 
                     labelId="Category"
                     label="Category"
                     name="category"
                     value={formData.category}
                     onChange={handleChange}>
-                    <MenuItem value={'Bills'}>Bills</MenuItem>
+                    <MenuItem value={'Bills'} >Bills</MenuItem>
                     <MenuItem value={'Charity'}>Charity</MenuItem>
                     <MenuItem value={'Eating Out'}>Eating Out</MenuItem>
                     <MenuItem value={'Entertainment'}>Entertainment</MenuItem>
@@ -242,7 +242,7 @@ function AddTransaction() {
 
               <Grid item xs={12}>
                 <TextField
-                sx={{ input: { color: 'red' } }}
+                sx={{ input: { color: '#000',  fontSize: "22px" } }}
                   name='description'
                   value={formData.description}
                   label='Description'
@@ -255,6 +255,7 @@ function AddTransaction() {
 
               <Grid item xs={12}>
                 <TextField
+                 sx={{ input: { color: '#000',  fontSize: "22px" } }}
                   type='number'
                   name='value'
                   value={formData.value} 

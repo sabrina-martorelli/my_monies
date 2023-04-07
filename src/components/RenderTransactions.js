@@ -74,8 +74,8 @@ function RenderTransactions() {
           width: '100%', 
           '& .dataGridHeader': {
           backgroundColor: '#e9c46a',
-          color: '#fff',
-          fontSize: 20
+          color: '#000',
+          fontSize: 26
           },
         }}
         
@@ -86,7 +86,7 @@ function RenderTransactions() {
             columns={columns}
             pageSize={5}
             rowsPerPageOptions={[5]}
-            
+            style={{backgroundColor: "#e9c46a", fontSize: "22px"}}
             disableSelectionOnClick
             experimentalFeatures={{ newEditingApi: true }}
           />
