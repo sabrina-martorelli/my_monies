@@ -8,9 +8,13 @@ function App() {
   return (
 
     <>
+    
       <Header />
+     
       <Tracker />
+   
       <Footer />
+     
     </>
   );
 }

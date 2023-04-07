@@ -1,11 +1,22 @@
 
 import Typography from '@mui/material/Typography';
+import { createTheme, ThemeProvider } from '@mui/material';
+
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Varela Round',
+    ].join(','),
+  },});
+
 
 function Header() {
     return (
       <>
+      <ThemeProvider theme={theme}>
         <Typography
-        variant='h3'
+        variant='h1'
         align='center'
         pb={15}
         pt={5}
@@ -13,6 +24,8 @@ function Header() {
         >
         My Monies
       </Typography>
+      </ThemeProvider>
+    
       </>
       
     );
