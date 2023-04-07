@@ -41,7 +41,7 @@ function RenderCards() {
 >
       
          
-            <Card sx={{ maxWidth: 780, pl:10, pr:10}}>
+            <Card sx={{ maxWidth:180 ,m:10, pl:10, pr:10}}>
               <CardCover>
                 <video
                   autoPlay
@@ -64,7 +64,7 @@ function RenderCards() {
               </CardContent>
             </Card>
          
-            <Card sx={{ maxWidth: 780 ,  pl:10, pr:10}}>
+            <Card sx={{ maxWidth:180 , m:10,   pl:10, pr:10}}>
               <CardCover>
                 <video
                   autoPlay
@@ -87,7 +87,7 @@ function RenderCards() {
               </CardContent>
             </Card>
          
-            <Card sx={{ maxWidth: 780 , pl:10, pr:10}}>
+            <Card sx={{ maxWidth:180 , m:10, pl:10, pr:10}}>
               <CardCover >
                 <video
                   autoPlay
@@ -101,7 +101,7 @@ function RenderCards() {
               </CardCover>
               <CardContent>
                 <Typography
-                   fontSize={{xs:20, sm:30}}
+                  fontSize={{xs:20, sm:30}}
                   fontWeight="lg"
                   textColor="#fff"
                   mt={{ xs: 12, sm: 18 }}
