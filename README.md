@@ -2,29 +2,36 @@
 
 ## My_Monies
 
+My monies is a financial tracker and dashboard created with React and Material UI. 
+It was part of the final project for the Trilogy’s Skills Bootcamp in Front-End Web Development(edX).
+The colour palette and general style was modified for this version.  
 ## Description
+
+The app allows to add transactions to 10 different categories : Bills, Charity, Eating out, Entertainment, Expenses, Groceries, Holidays, Savings, Shopping, Transport. 
+
+The new transactions will be stored on the local storage . 
+
+Base on the information stored the dashboard will show different charts , graphics and tables with calculate data. 
 
 
 ## Screenshots
 
-
+![screenshot](./src/assets/images/screenshot1.png)
+![screenshot](./src/assets/images/screenshot2.png)
+![screenshot](./src/assets/images/screenshot3.png)
 
 ## Table of Contents
 
 - [Description](#description)
 - [Screenshots](#screenshots)
 - [Usage](#usage)
-- [Contributors](#contributors)
 - [Credits](#credits)
 - [License](#license)
+- [Questions](#questions)
 
 ## Usage
 
-
-
-## Contributors
-
-
+run npm start
 
 
 ## Credits
@@ -59,3 +66,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+##  Questions
+
+ Additional questions? Please contact me at [sabrina.martorelli@gmail.com ](mailto:sabrina.martorelli@gmail.com).
