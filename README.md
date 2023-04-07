@@ -1,24 +1,13 @@
+
+# My Monies
 ![Bower](https://img.shields.io/bower/l/mi?style=for-the-badge)
 
-## My_Monies
+## Description
 
 My monies is a financial tracker and dashboard created with React and Material UI. 
 It was part of the final project for the Trilogy’s Skills Bootcamp in Front-End Web Development(edX).
 The colour palette and general style was modified for this version.  
-## Description
 
-The app allows to add transactions to 10 different categories : Bills, Charity, Eating out, Entertainment, Expenses, Groceries, Holidays, Savings, Shopping, Transport. 
-
-The new transactions will be stored on the local storage . 
-
-Base on the information stored the dashboard will show different charts , graphics and tables with calculate data. 
-
-
-## Screenshots
-
-![screenshot](./src/assets/images/screenshot1.png)
-![screenshot](./src/assets/images/screenshot2.png)
-![screenshot](./src/assets/images/screenshot3.png)
 
 ## Table of Contents
 
@@ -29,9 +18,21 @@ Base on the information stored the dashboard will show different charts , graphi
 - [License](#license)
 - [Questions](#questions)
 
+
+## Screenshots
+
+![screenshot](./src/assets/images/screenshot1.png)
+![screenshot](./src/assets/images/screenshot2.png)
+![screenshot](./src/assets/images/screenshot3.png)
+
+
 ## Usage
 
-run npm start
+The app allows to add transactions to 10 different categories : Bills, Charity, Eating out, Entertainment, Expenses, Groceries, Holidays, Savings, Shopping, Transport. 
+
+The new transactions will be stored on the local storage . 
+
+Base on the information stored the dashboard will show different charts , graphics and tables with calculate data. 
 
 
 ## Credits
