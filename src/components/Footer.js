@@ -17,7 +17,7 @@ const Footer = () => {
       >
         
         <BottomNavigation
-         style={{backgroundColor: "#e9c46a", fontSize: "22px",  color: '#fff',}}
+         style={{backgroundColor: "#e9c46a", }}
           showLabels
           value={value}
           onChange={(event, newValue) => {
@@ -25,9 +25,28 @@ const Footer = () => {
           }}
         >
             
-          <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon />} href="https://www.linkedin.com/in/sabrina-martorelli" target="blank" />
-          <BottomNavigationAction label="Github" icon={<GitHubIcon />}  href="https://github.com/sabrina-martorelli/" target="blank" />
-          <BottomNavigationAction label="Email" icon={<EmailIcon />}  href="mailto:sabrina.martorelli@gmail.com" target="blank" />
+          <BottomNavigationAction 
+          
+          sx={{
+            bgcolor: '#e76f51',
+            
+          }}
+
+
+          label="LinkedIn" icon={<LinkedInIcon />} href="https://www.linkedin.com/in/sabrina-martorelli" target="blank" />
+          <BottomNavigationAction
+           sx={{
+            bgcolor: '#2a9d8f',
+            
+          }}  
+          label="GitHub" icon={<GitHubIcon />}  href="https://github.com/sabrina-martorelli/" target="blank" />
+          <BottomNavigationAction 
+            sx={{
+              bgcolor: '#264653',
+              
+            }}
+          
+          label="Email" icon={<EmailIcon />}  href="mailto:sabrina.martorelli@gmail.com" target="blank" />
         </BottomNavigation>
       </Box>
     );
