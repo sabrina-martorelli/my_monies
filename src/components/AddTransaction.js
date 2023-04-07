@@ -27,7 +27,7 @@ function AddTransaction() {
   const theme = createTheme({
     palette: {
       brand: {
-        main: '#001C55',
+        main: '#e76f51',
         contrastText: '#fff',
       },
     },
@@ -204,6 +204,7 @@ function AddTransaction() {
               <Grid item xs={12} >
                 <LocalizationProvider dateAdapter={AdapterDayjs} >
                   <DatePicker
+
                     label="Date"
                     value={date}  
                     onChange={(newValue) => {
@@ -215,9 +216,10 @@ function AddTransaction() {
               </Grid>
 
               <Grid item xs={12}>
-                <FormControl fullWidth required>
+                <FormControl fullWidth required   style = {{ color:'#e76f51'}}>
                   <InputLabel id="input-category">Category</InputLabel>
                   <Select
+                  
                     labelId="Category"
                     label="Category"
                     name="category"
@@ -240,6 +242,7 @@ function AddTransaction() {
 
               <Grid item xs={12}>
                 <TextField
+                sx={{ input: { color: 'red' } }}
                   name='description'
                   value={formData.description}
                   label='Description'

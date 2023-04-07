@@ -43,11 +43,11 @@ function RenderTopFive() {
       setText(
         <Card 
         sx={{ maxWidth: 260, 
-        color: '#222479', 
+        color: '#e76f51', 
         p: 3, 
         ml:5,
         mt:20 ,
-        bgcolor: '#fff' }} 
+        bgcolor: '#000' }} 
 
      
         >
@@ -58,7 +58,9 @@ function RenderTopFive() {
             <ListItem disablePadding>
               <ListItemIcon>
                 <LooksOneIcon
-                  fontSize='large' />
+                  fontSize='large' 
+                 
+                  />
               </ListItemIcon>
               <ListItemText primary={'£' + Filtered[0].value + ' - ' + Filtered[0].category} />
 

@@ -1,12 +1,5 @@
 
-/* Colour palette */
-:root {
-  --NavyBlue: #001C55;
-  --SkyBlue: #6BC1FF;
-  --DarkGray: #333333;
-  --LightGray: #F7F7F7;
-  --White: #FFFFFF;
-}
+
 
 body {
   margin: 0;
@@ -15,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:black;
 }
 
 

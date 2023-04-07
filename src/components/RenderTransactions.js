@@ -20,27 +20,28 @@ function RenderTransactions() {
         field: 'id',
         headerName: '#',
         width: 10,
+       
         headerClassName: 'dataGridHeader',
 
       },
       {
         field: 'date',
         headerName: 'Date',
-        width: 100,
+        width: 300,
         editable: false,
         headerClassName: 'dataGridHeader',
       },
       {
         field: 'category',
         headerName: 'Category',
-        width: 150,
+        width: 350,
         editable: false,
         headerClassName: 'dataGridHeader',
       },
       {
         field: 'description',
         headerName: 'Description',
-        width: 150,
+        width: 450,
         editable: false,
         headerClassName: 'dataGridHeader',
 
@@ -49,7 +50,7 @@ function RenderTransactions() {
         field: 'value',
         headerName: 'Value',
         type: 'number',
-        width: 100,
+        width: 200,
         editable: false,
         headerClassName: 'dataGridHeader',
 
@@ -72,9 +73,9 @@ function RenderTransactions() {
           height: '80%', 
           width: '100%', 
           '& .dataGridHeader': {
-          backgroundColor: '#001C55',
+          backgroundColor: '#e9c46a',
           color: '#fff',
-          fontSize: 18
+          fontSize: 20
           },
         }}
         
@@ -85,6 +86,7 @@ function RenderTransactions() {
             columns={columns}
             pageSize={5}
             rowsPerPageOptions={[5]}
+            
             disableSelectionOnClick
             experimentalFeatures={{ newEditingApi: true }}
           />
@@ -101,7 +103,12 @@ function RenderTransactions() {
 
   return (
     <>
-      <Typography variant='h4' align='center' sx={{ p: 5 }}>Transactions History</Typography>
+      <Typography 
+      variant='h4' 
+      align='center' 
+      sx={{ p: 5 }}
+      color='#e9c46a'
+      >Transactions History</Typography>
       {/*Shows the correct banner depending on what is on the Pots at the moment */}
       {textOnScreen}
 

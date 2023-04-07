@@ -42,7 +42,7 @@ function RenderIncome() {
           newData.push({
             name: '£' + reverse[index].value + ' - ' + reverse[index].date,
             uv: +reverse[index].value,
-            fill: "#222479"
+            fill: "#2a9d8f"
           });
 
         }
@@ -61,7 +61,7 @@ function RenderIncome() {
           >
             <RadialBar
               minAngle={15}
-              label={{ position: "insideStart", fill: "#F7F7F7" }}
+              label={{ position: "insideStart", fill: "#000" }}
               background
               clockWise
               dataKey="uv"
@@ -86,7 +86,9 @@ function RenderIncome() {
           <Typography 
       variant='h4' 
       align='center' 
-      sx={{ p: 5 }}>
+      sx={{ p: 5 }}
+      color='#e9c46a'
+      >
    
       Most Recent Incomes 
       </Typography>

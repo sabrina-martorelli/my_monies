@@ -29,27 +29,27 @@ function RenderFiveTransactions() {
         {
           name: '£' + transactions[(transactions.length - 1)].value + ' - ' + transactions[(transactions.length - 1)].category + ' - ' + transactions[(transactions.length - 1)].date,
           uv: transactions[(transactions.length - 1)].value,
-          fill: "#222479"
+          fill: "#e9c46a"
         },
         {
           name: '£' + transactions[(transactions.length - 2)].value + ' - ' + transactions[(transactions.length - 2)].category + ' - ' + transactions[(transactions.length - 2)].date,
           uv: transactions[(transactions.length - 2)].value,
-          fill: "#1446a7"
+          fill: "#f4a261"
         },
         {
           name: '£' + transactions[(transactions.length - 3)].value + ' - ' + transactions[(transactions.length - 3)].category + ' - ' + transactions[(transactions.length - 3)].date,
           uv: transactions[(transactions.length - 3)].value,
-          fill: "#346568"
+          fill: "#e76f51"
         },
         {
           name: '£' + transactions[(transactions.length - 4)].value + ' - ' + transactions[(transactions.length - 4)].category + ' - ' + transactions[(transactions.length - 4)].date,
           uv: transactions[(transactions.length - 4)].value,
-          fill: "#488485"
+          fill: "#2a9d8f"
         },
         {
           name: '£' + transactions[(transactions.length - 5)].value + ' - ' + transactions[(transactions.length - 5)].category + ' - ' + transactions[(transactions.length - 5)].date,
           uv: transactions[(transactions.length - 5)].value,
-          fill: "#96bac4"
+          fill: "#264653"
         }
 
       ];
@@ -69,7 +69,7 @@ function RenderFiveTransactions() {
         >
           <RadialBar
             minAngle={15}
-            label={{ position: "insideStart", fill: "#F7F7F7" }}
+            label={{ position: "insideStart", fill: "#000" }}
             background
             clockWise
             dataKey="uv"
@@ -99,7 +99,8 @@ function RenderFiveTransactions() {
       <Typography 
       variant='h4' 
       align='center' 
-      sx={{ p: 5 }}>
+      sx={{ p: 5 }}
+      color='#e9c46a'>
       5 Most Recent Transactions
       </Typography>
      

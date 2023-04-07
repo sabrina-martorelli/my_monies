@@ -5,8 +5,8 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import Typography from '@mui/material/Typography';
 
 //Colours for the chart
-const colors = ['#001C55', '#222479', '#1446a7',
-  '#4c78c9', '#b7cdf7', '#346568', '#488485', '#67bfbf', '#96bac4', '#c1e9f4'];
+const colors = ['#264653', '#2a9d8f', '#e9c46a',
+  '#f4a261', '#e76f51', '#264653', '#2a9d8f', '#e9c46a', '#f4a261', '#e76f51'];
 
 
 function RenderTotalExpenses() {
@@ -117,7 +117,9 @@ function RenderTotalExpenses() {
       <Typography 
       variant='h4' 
       align='center' 
-      sx={{ p: 5 }}>
+      sx={{ p: 5 }}
+      color='#e9c46a'
+      >
       Total Expenses - All times
       </Typography>
 

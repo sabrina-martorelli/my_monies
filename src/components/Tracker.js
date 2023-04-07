@@ -27,7 +27,7 @@ function Tracker() {
         pr={5}
         pl={5}  >
 
-        <Grid item xs={12} sm={12} >
+        <Grid item xs={12} sm={12} pb={15} >
           <RenderCards />
         </Grid>
 
@@ -35,23 +35,23 @@ function Tracker() {
      
    
    {/* A different version of the component will show depending of the screen size in use */}
-       <Grid item sm={6}
+       <Grid item sm={6} pb={15}
           display={{ xs: "none", sm: "block" }}>
           <RenderIncome />
         </Grid>
 
-        <Grid item xs={12}
+        <Grid item xs={12} pb={15}
           display={{ xs: "block", sm: "none" }}>
           <ResponsiveRenderIncome />
         </Grid>
 
         {/* A different version of the component will show depending of the screen size in use */}
-        <Grid item sm={6}
+        <Grid item sm={6} pb={15}
           display={{ xs: "none", sm: "block" }} >
           <RenderFiveTransactions />
         </Grid>
 
-        <Grid item xs={12}
+        <Grid item xs={12} pb={15}
           display={{ xs: "block", sm: "none" }}>
           <ResponsiveRenderFiveTransactions />
         </Grid>
@@ -60,13 +60,13 @@ function Tracker() {
     
      
 
- {/* Render Total Expenses will hide on xs */}
- <Grid item sm={12}
+        {/* Render Total Expenses will hide on xs */}
+        <Grid item sm={12} pb={15}
           display={{ xs: "none", sm: "block" }}>
           <RenderTotalExpenses />
         </Grid>
 
-        <Grid item xs={12}
+        <Grid item xs={12} pb={15}
           display={{ xs: "block", sm: "none" }}>
           <Typography
             variant='h5'
@@ -81,11 +81,11 @@ function Tracker() {
 
        
 
-        <Grid item xs={12} sm={3} >
+        <Grid item xs={12} sm={3} pb={15} >
       <RenderTopFive />
       </Grid>
 
-        <Grid item xs={12} sm={9}
+        <Grid item xs={12} sm={9} pb={15}
           display={{ xs: "none", sm: "block" }}
         >
           <RenderTransactions />

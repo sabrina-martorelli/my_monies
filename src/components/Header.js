@@ -7,7 +7,10 @@ function Header() {
         <Typography
         variant='h3'
         align='center'
-        sx={{ p: 5 }}>
+        pb={15}
+        pt={5}
+        color='#e9c46a'
+        >
         My Monies
       </Typography>
       </>
