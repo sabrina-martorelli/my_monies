@@ -47,7 +47,7 @@ function RenderTopFive() {
         p: 3, 
         ml:5,
         mt:0 ,
-       
+        fontSize: "28px",
         bgcolor: '#000' }} 
 
      
@@ -56,47 +56,55 @@ function RenderTopFive() {
         <Typography variant='h4' align='center' sx={{pb: 5,  color: '#e9c46a' }}>Top 5 Expenditures </Typography>
          
           <List>
-            <ListItem disablePadding>
-              <ListItemIcon>
+            <ListItem  >
+              <ListItemIcon >
                 <LooksOneIcon
                   fontSize='large' 
-                 
+                  sx={{ color: '#2a9d8f' }} 
                   />
               </ListItemIcon>
-              <ListItemText primary={'£' + Filtered[0].value + ' - ' + Filtered[0].category} />
+              <ListItemText  sx={{ fontSize: 22 }} disableTypography primary={'£' + Filtered[0].value + ' - ' + Filtered[0].category} />
 
             </ListItem>
-            <ListItem disablePadding>
+            <ListItem >
 
               <ListItemIcon>
-                <LooksTwoIcon fontSize='large' />
+                <LooksTwoIcon fontSize='large'
+                  sx={{ color: '#2a9d8f' }} 
+                />
               </ListItemIcon>
-              <ListItemText primary={'£' + Filtered[1].value + ' - ' + Filtered[1].category} />
+              <ListItemText  sx={{ fontSize: 22 }} disableTypography primary={'£' + Filtered[1].value + ' - ' + Filtered[1].category} />
 
             </ListItem>
 
-            <ListItem disablePadding>
+            <ListItem >
 
               <ListItemIcon>
-                <Looks3Icon fontSize='large' />
+                <Looks3Icon fontSize='large'
+                  sx={{ color: '#2a9d8f' }} 
+                />
               </ListItemIcon>
-              <ListItemText primary={'£' + Filtered[2].value + ' - ' + Filtered[2].category} />
+              <ListItemText  sx={{ fontSize: 22 }} disableTypography primary={'£' + Filtered[2].value + ' - ' + Filtered[2].category} />
 
             </ListItem>
-            <ListItem disablePadding>
+            <ListItem >
 
               <ListItemIcon>
-                <Looks4Icon fontSize='large' />
+                <Looks4Icon fontSize='large'
+                  sx={{ color: '#2a9d8f' }} 
+                />
               </ListItemIcon>
-              <ListItemText primary={'£' + Filtered[3].value + ' - ' + Filtered[3].category} />
+              <ListItemText  sx={{ fontSize: 22 }} disableTypography primary={'£' + Filtered[3].value + ' - ' + Filtered[3].category} />
 
             </ListItem>
-            <ListItem disablePadding>
+            <ListItem >
 
               <ListItemIcon>
-                <Looks5Icon fontSize='large' />
+                <Looks5Icon fontSize='large'
+                  sx={{ color: '#2a9d8f' }} 
+                />
               </ListItemIcon>
-              <ListItemText primary={'£' + Filtered[4].value + ' - ' + Filtered[4].category} />
+              <ListItemText  sx={{ fontSize: 22 }} disableTypography  primary={'£' + Filtered[4].value + ' - ' + Filtered[4].category} />
 
             </ListItem>
           </List>

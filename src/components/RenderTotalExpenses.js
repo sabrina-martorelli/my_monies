@@ -79,16 +79,18 @@ function RenderTotalExpenses() {
 
       //Sets chart to show on screen
       setText(
-        <BarChart style={{ margin: "0 auto" }}
-          width={1024}
-          height={500}
+        <BarChart style={{ margin: "0 auto", fontSize: 22  }}
+          width={2048}
+          height={700}
           data={data}
+        
 
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
           <Bar 
+         
           dataKey="uv" 
           fill="#000" 
           shape={<TriangleBar/>} 

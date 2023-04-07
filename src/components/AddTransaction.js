@@ -27,8 +27,9 @@ function AddTransaction() {
   const theme = createTheme({
     palette: {
       brand: {
-        main: '#264653',
-        contrastText: '#fff',
+        main: '#e9c46a',
+        contrastText: '#000',
+        
       },
     },
   });
@@ -196,7 +197,7 @@ function AddTransaction() {
         Add Transaction
       </Typography> */}
      
-      <Card style={{ maxWidth: 350, margin: "0 auto", backgroundColor: "#e9c46a"}} >
+      <Card style={{ maxWidth: 650, margin: "0 auto", backgroundColor: "#264653"}} >
         <CardContent>
           <form onSubmit={handleSubmit}>
             <Grid container spacing={3} justifyContent="center" padding={2} >
@@ -217,7 +218,7 @@ function AddTransaction() {
 
               <Grid item xs={12}>
                 <FormControl fullWidth required    sx={{ input: { color: '#000',  fontSize: "22px" } }}>
-                  <InputLabel id="input-category" >Category</InputLabel>
+                  <InputLabel id="input-category">Category</InputLabel>
                   <Select
                  
                     labelId="Category"
@@ -271,6 +272,7 @@ function AddTransaction() {
 
               <ThemeProvider theme={theme}>
                 <Button
+                  sx={{fontSize: 26}}
                   type="submit"
                   variant='contained'
                   color= 'brand'

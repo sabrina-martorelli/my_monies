@@ -12,7 +12,8 @@ function RenderIncome() {
   const style = {
     top: 30,
     left: 400,
-    lineHeight: "44px"
+    lineHeight: "44px",
+    fontSize: 22 
   };
 
 
