@@ -42,17 +42,18 @@ function RenderTopFive() {
        //Sets table board to show on screen
       setText(
         <Card 
-        sx={{ maxWidth: 260, 
+        sx={{ maxWidth: 360, 
         color: '#e76f51', 
         p: 3, 
         ml:5,
-        mt:20 ,
+        mt:0 ,
+       
         bgcolor: '#000' }} 
 
      
         >
 
-        <Typography variant='h4' align='center'>Top 5 Expenditures </Typography>
+        <Typography variant='h4' align='center' sx={{pb: 5,  color: '#e9c46a' }}>Top 5 Expenditures </Typography>
          
           <List>
             <ListItem disablePadding>

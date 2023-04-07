@@ -19,7 +19,7 @@ function RenderTransactions() {
       {
         field: 'id',
         headerName: '#',
-        width: 10,
+        width: 100,
        
         headerClassName: 'dataGridHeader',
 
@@ -41,7 +41,7 @@ function RenderTransactions() {
       {
         field: 'description',
         headerName: 'Description',
-        width: 450,
+        width: 600,
         editable: false,
         headerClassName: 'dataGridHeader',
 
@@ -50,7 +50,7 @@ function RenderTransactions() {
         field: 'value',
         headerName: 'Value',
         type: 'number',
-        width: 200,
+        width: 500,
         editable: false,
         headerClassName: 'dataGridHeader',
 
@@ -70,7 +70,7 @@ function RenderTransactions() {
         <Box 
         
         sx={{
-          height: '80%', 
+          height: '650px',
           width: '100%', 
           '& .dataGridHeader': {
           backgroundColor: '#e9c46a',
@@ -84,9 +84,8 @@ function RenderTransactions() {
           <DataGrid
             rows={newRows}
             columns={columns}
-            pageSize={5}
-            rowsPerPageOptions={[5]}
-            style={{backgroundColor: "#e9c46a", fontSize: "22px"}}
+           
+            style={{backgroundColor: "#2a9d8f", fontSize: "22px",  color: '#fff',}}
             disableSelectionOnClick
             experimentalFeatures={{ newEditingApi: true }}
           />

@@ -35,7 +35,7 @@ function Tracker() {
      
    
    {/* A different version of the component will show depending of the screen size in use */}
-       <Grid item sm={6} pb={15}
+       <Grid item sm={4} pb={15}
           display={{ xs: "none", sm: "block" }}>
           <RenderIncome />
         </Grid>
@@ -46,7 +46,7 @@ function Tracker() {
         </Grid>
 
         {/* A different version of the component will show depending of the screen size in use */}
-        <Grid item sm={6} pb={15}
+        <Grid item sm={4} pb={15}
           display={{ xs: "none", sm: "block" }} >
           <RenderFiveTransactions />
         </Grid>
@@ -54,6 +54,10 @@ function Tracker() {
         <Grid item xs={12} pb={15}
           display={{ xs: "block", sm: "none" }}>
           <ResponsiveRenderFiveTransactions />
+        </Grid>
+
+        <Grid item xs={12} sm={4} pb={15} >
+        <RenderTopFive />
         </Grid>
 
 
@@ -81,10 +85,7 @@ function Tracker() {
 
        
 
-        <Grid item xs={12} sm={3} pb={15} >
-      <RenderTopFive />
-      </Grid>
-
+       
         <Grid item xs={12} sm={9} pb={15}
           display={{ xs: "none", sm: "block" }}
         >

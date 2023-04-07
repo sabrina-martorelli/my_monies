@@ -86,7 +86,7 @@ function RenderIncome() {
           <Typography 
       variant='h4' 
       align='center' 
-      sx={{ p: 5 }}
+      sx={{ p: 3 }}
       color='#e9c46a'
       >
    
